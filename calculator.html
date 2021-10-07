@@ -1,0 +1,123 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>HESAP MAKİNESİ</title>
+    <script type="text/javascript">
+        function toplam() {
+            var deger1 = parseInt(document.getElementById('sayi1').value);
+            var deger2 = parseInt(document.getElementById('sayi2').value);
+            document.getElementById('sonuc').value = deger1 + deger2;
+        }
+        function cikartma() {
+            var deger1 = parseInt(document.getElementById('sayi1').value);
+            var deger2 = parseInt(document.getElementById('sayi2').value);
+            document.getElementById('sonuc').value = deger1 - deger2;
+        }
+        function carpma() {
+            var deger1 = parseInt(document.getElementById('sayi1').value);
+            var deger2 = parseInt(document.getElementById('sayi2').value);
+            document.getElementById('sonuc').value = deger1 * deger2;
+        }
+        function bolme() {
+            var deger1 = parseInt(document.getElementById('sayi1').value);
+            var deger2 = parseInt(document.getElementById('sayi2').value);
+            document.getElementById('sonuc').value = deger1 / deger2;
+        }
+    </script>
+    <style>
+#sonuc
+{
+position:relative;
+left:515px;
+top:200px;
+border:solid 5px;
+background-color: rgb(201, 167, 124);
+
+}
+h1{
+    color:aliceblue;
+    position:relative;
+    left:560px;
+    top:230px;
+    
+}
+
+#sayi1
+{
+    position:relative;
+    left:390px;
+    top:200px;
+    background-color:beige; 
+}
+
+#sayi2
+{
+    position:relative;
+    left:440px;
+    top:200px;
+    background-color:beige;
+}
+#topla{
+    position: relative;
+    left:445px;
+    top:240px;
+    background-color: bisque;
+}
+#fark{
+    position: relative;
+    left:465px;
+    top:240px;
+    background-color: bisque;
+}
+
+#carp{
+    position: relative;
+    left:485px;
+    top:240px;
+    background-color: bisque;
+  
+}
+
+#bol{
+    position: relative;
+    left:505px;
+    top:240px;
+    background-color: bisque;
+}
+#birinciSayi{
+position: relative;
+left: 420;
+top: -20px;
+color:aliceblue;
+}
+#ikinciSayi{
+position: relative;
+left: 650;
+top: -60px;
+color:aliceblue;
+}
+p{
+    position: relative;
+    top:-270px;
+}
+
+    </style>
+</head>
+<body bgcolor="#5f9ea0">
+<input type="text" id="sayi1" /> <input type="text" id="sayi2" />
+<br />
+<input  type="button" value="TOPLA" id="topla" onclick="toplam()" />
+<input  type="button" value="ÇIKAR" id="fark" onclick="cikartma()" />
+<input type="button" value="ÇARP" id="carp" onclick="carpma()" />
+<input type="button" value="BÖL" id="bol" onclick="bolme()" /><br />
+<h1> Sonuç </h1> <br /><input type="text" id="sonuc" />
+<border> </border>
+
+<h3 id="birinciSayi">BİRİNCİ SAYI</h3>
+<h3 id="ikinciSayi">İKİNCİ SAYI</h3>
+
+<p>Onur Kudret</p>
+<p>200601038</p>
+
+
+</body>
+</html>
